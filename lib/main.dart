@@ -31,6 +31,13 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.amber,
         centerTitle: true,
       ),
+      body: FutureBuilder<Map>(
+        future: getData(),
+        builder: (context, snapshot) {
+          switch(snapshot.connectionState) {
+
+          }
+        }),
     );
   }
 }
